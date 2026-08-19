@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netenrich — Local Mockup (Not Live)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#E8542C;
+    --accent-dark:#D4431E;
+    --ink:#1F2024;
+    --muted:#6B7280;
+    --line:#ECECEE;
+    --bg:#FFFFFF;
+    --badge-bg:#FDF1EC;
+    --badge-border:#F3C4B0;
+    --footer-bg:#151517;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Inter',ui-sans-serif,system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---- Mockup disclosure banner ---- */
+  .mockup-banner{
+    background:#111114;
+    color:#F5C6B4;
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:.04em;
+    text-align:center;
+    padding:8px 12px;
+    text-transform:uppercase;
+  }
+  .mockup-banner span{color:#8A8F98;font-weight:500;text-transform:none;letter-spacing:0;}
+
+  /* ---- Nav ---- */
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 48px;
+    border-bottom:1px solid var(--line);
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-weight:800;
+    font-size:20px;
+    letter-spacing:-.01em;
+    color:var(--ink);
+  }
+  .logo-mark{
+    width:20px;height:22px;
+    background:var(--accent);
+    clip-path:polygon(0% 0%, 45% 0%, 100% 100%, 55% 100%);
+    display:inline-block;
+  }
+  nav{display:flex;align-items:center;gap:36px;}
+  nav a{
+    color:#3A3D45;
+    text-decoration:none;
+    font-size:14.5px;
+    font-weight:500;
+    display:flex;align-items:center;gap:4px;
+  }
+  nav a .chev{font-size:10px;color:#9AA0AA;}
+  .nav-right{display:flex;align-items:center;gap:18px;}
+  .widget-chip{
+    width:32px;height:32px;
+    border-radius:9px;
+    background:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:15px;font-weight:800;
+    box-shadow:0 2px 6px rgba(232,84,44,.35);
+  }
+  .btn{
+    background:var(--accent);
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.02em;
+    text-transform:uppercase;
+    padding:11px 20px;
+    border-radius:7px;
+    border:none;
+    text-decoration:none;
+    display:inline-block;
+    cursor:pointer;
+  }
+  .btn:hover{background:var(--accent-dark);}
+
+  /* ---- Hero ---- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding:96px 48px 140px;
+    background:#FCFCFD;
+  }
+  .hero-bg{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    opacity:.55;
+  }
+  .hero-inner{
+    position:relative;
+    z-index:1;
+    max-width:640px;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--badge-bg);
+    border:1px solid var(--badge-border);
+    color:#3A3D45;
+    font-size:13px;
+    font-weight:600;
+    padding:8px 16px;
+    border-radius:999px;
+    margin-bottom:26px;
+  }
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;}
+  h1{
+    font-size:40px;
+    line-height:1.22;
+    font-weight:800;
+    letter-spacing:-.01em;
+    margin-bottom:22px;
+  }
+  h1 .accent{color:var(--accent);}
+  .hero p{
+    color:var(--muted);
+    font-size:15.5px;
+    line-height:1.65;
+    margin-bottom:16px;
+    max-width:560px;
+  }
+  .hero p.callout{
+    color:var(--ink);
+    font-weight:700;
+    margin-bottom:32px;
+  }
+
+  /* ---- Footer stub (matches dark strip visible at fold) ---- */
+  footer{
+    background:var(--footer-bg);
+    color:#9AA0AA;
+    padding:40px 48px;
+    font-size:13px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  footer .logo{color:#fff;}
+  footer .fine{color:#6B6F78;}
+</style>
+</head>
+<body>
+
+  <div class="mockup-banner">
+    Local Mockup — Not Live <span>&nbsp;·&nbsp; Internal demo build for sales purposes only, recreated from a screenshot of netenrich.com</span>
+  </div>
+
+  <header>
+    <div class="logo">
+      <span class="logo-mark"></span>
+      NETENRICH
+    </div>
+    <nav>
+      <a href="#">Solutions <span class="chev">▾</span></a>
+      <a href="#">Platform</a>
+      <a href="#">Why Netenrich <span class="chev">▾</span></a>
+      <a href="#">Resources <span class="chev">▾</span></a>
+    </nav>
+    <div class="nav-right">
+      <div class="widget-chip" title="1mind Superhuman widget">1</div>
+      <a class="btn" href="#">Try Agentic SOC</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <svg class="hero-bg" width="100%" height="620" viewBox="0 0 1400 620" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="#E3E4E8" stroke-width="1" fill="none">
+        <path d="M120 560 C 300 420, 420 470, 560 400 S 820 320, 980 380 1180 300 1320 360" />
+        <path d="M60 480 C 220 380, 380 430, 520 360 S 760 260, 940 320 1140 250 1360 300" />
+        <path d="M0 600 C 180 500, 360 540, 500 470 S 700 380, 900 440 1120 360 1400 420" />
+      </g>
+      <g fill="#F2B79E">
+        <circle cx="160" cy="540" r="3.5"/>
+        <circle cx="300" cy="470" r="3"/>
+        <circle cx="440" cy="500" r="2.5"/>
+        <circle cx="560" cy="410" r="3"/>
+        <circle cx="700" cy="450" r="2.5"/>
+        <circle cx="840" cy="380" r="3.5"/>
+        <circle cx="960" cy="420" r="3"/>
+        <circle cx="1100" cy="350" r="3"/>
+        <circle cx="1240" cy="390" r="2.5"/>
+        <circle cx="1340" cy="320" r="3"/>
+      </g>
+    </svg>
+    <div class="hero-inner">
+      <div class="eyebrow"><span class="dot"></span> Your Current SOC Model Isn't Keeping Up</div>
+      <h1>Defend at <span class="accent">Machine Speed.</span><br>Make your <span class="accent">SOC Agentic</span> in 30 Days.</h1>
+      <p>Traditional SIEM, MDR and XDR models are trapping your team in a cycle of endless triage. Built for a different era, they rely on human-speed workflows to fight machine-speed AI attacks, leaving you with massive blind spots and an exhausted security team.</p>
+      <p>Netenrich combines a digital workforce of AI Agents, proactive posture analytics, and dedicated human expertise. We eliminate the operational noise that drains your resources.</p>
+      <p class="callout">We stop managing alerts and start managing your actual risk.</p>
+      <a class="btn" href="#" style="padding:15px 26px;font-size:13.5px;">Get an Agentic SOC in 30 Days</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo"><span class="logo-mark"></span> NETENRICH</div>
+    <div class="fine">Local mockup — built for internal demo purposes, not the live Netenrich site.</div>
+  </footer>
+
+  <!-- 1mind Superhuman widget deployment script -->
+  <script src="https://launcher.1mind.com/deployment-5wtprnfv22" async></script>
+
+</body>
+</html>
