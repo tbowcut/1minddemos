@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Presidio — Superbaby Demo Stage (Style 2)</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0081bc; /* Presidio brand blue, fallback while the screenshot loads */
+    overflow-x: hidden;
+  }
+
+  .site-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/xr5P72N.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  /* Small, unobtrusive internal-only label so this never gets mistaken for the live site */
+  .stage-tag {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Static screenshot of the Presidio site, used as the demo backdrop -->
+  <div class="site-background"></div>
+
+  <!-- Internal marker only -- not part of the live site. Labeled "Style 2" so this stays
+       distinguishable from Demo_Landing_Page_2026-08-25.html (Style 1) when viewed side by side. -->
+  <div class="stage-tag">INTERNAL DEMO STAGE — Presidio × 1mind (Deployment Style 2)</div>
+
+  <!-- 1mind Superbaby widget launch code — second deployment, for comparing deployment styles -->
+  <script src="https://launcher.1mind.com/deployment-bclxklq8r9" async></script>
+
+</body>
+</html>
