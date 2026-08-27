@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Top Workplaces | Nomination Confirmation</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #eef0f4; /* matches the confirmation page's gray body background */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  .confirmation-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .superhuman-section {
+    background: #eef0f4;
+    padding: 8px 24px 64px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .superhuman-wrap {
+    width: 100%;
+    max-width: 960px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Top of page: existing Step 5 confirmation experience, unchanged.
+       Swap the src below for the live confirmation page/component once this
+       is wired into the real post-form flow — this <img> is a placeholder
+       standing in for that markup so the layout can be reviewed as-is. -->
+  <div class="confirmation-hero">
+    <img src="https://i.imgur.com/Bd57ipc.png" alt="Top Workplaces nomination confirmation — You just did something awesome." />
+  </div>
+
+  <!-- Superhuman embed, inserted below the confirmation message per Tom's spec -->
+  <div class="superhuman-section">
+    <div class="superhuman-wrap">
+      <div style="width: 100%; height: 675px;">
+        <div id="onemind-widget"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://launcher.1mind.com/deployment-pvr497dbn2"></script>
+
+</body>
+</html>
