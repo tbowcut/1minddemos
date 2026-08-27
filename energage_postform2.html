@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Top Workplaces | Nomination Confirmation</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #eef0f4; /* matches the confirmation page's gray body background */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  .confirmation-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .superhuman-section {
+    background: #eef0f4;
+    padding: 8px 24px 48px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Sized to match how the widget renders on the 1mind preview page
+     (app.1mind.com/preview/pvr497dbn2), which runs the iframe at
+     ~100% viewport width and ~87% viewport height. We can't go full
+     100vh here since the confirmation message already takes up space
+     above it, so this uses a large viewport-relative height instead
+     of a small fixed box, and drops the narrow max-width so it isn't
+     squeezed into a small column. */
+  .superhuman-wrap {
+    width: 100%;
+    max-width: 1400px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Top of page: existing Step 5 confirmation experience, unchanged.
+       Swap the src below for the live confirmation page/component once this
+       is wired into the real post-form flow — this <img> is a placeholder
+       standing in for that markup so the layout can be reviewed as-is. -->
+  <div class="confirmation-hero">
+    <img src="https://i.imgur.com/Bd57ipc.png" alt="Top Workplaces nomination confirmation — You just did something awesome." />
+  </div>
+
+  <!-- Superhuman embed, inserted below the confirmation message per Tom's spec -->
+  <div class="superhuman-section">
+    <div class="superhuman-wrap">
+      <div style="width: 100%; height: 85vh; min-height: 760px;">
+        <div id="onemind-widget"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://launcher.1mind.com/deployment-pvr497dbn2"></script>
+
+</body>
+</html>
