@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NexHealth</title>
+<!--
+  Internal SE demo asset — not a public page, not affiliated with or published by NexHealth.
+  Purpose: show the live 1mind widget rendered over a screenshot of nexhealth.com, so Mike
+  (the NexHealth Superbaby) can be demoed as if visiting the real site. Open this file locally
+  in a real browser with internet access so the launcher script below can load and render Mike.
+-->
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #111313;
+  }
+  .page-shot {
+    display: block;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: top center;
+  }
+</style>
+</head>
+<body>
+
+  <img class="page-shot" src="https://i.imgur.com/0kXp6yG.png" alt="nexhealth.com" />
+
+  <!-- 1mind widget launcher — self-injects Mike as a floating widget over the page above -->
+  <script src="https://launcher.1mind.com/deployment-46vd5pphj2" async></script>
+
+</body>
+</html>
