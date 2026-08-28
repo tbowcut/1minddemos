@@ -139,29 +139,23 @@
  </div>
 
  <div class="stage">
-  <div class="card">
-   <div class="rail">
-     <h2>Start Your Onboarding Session. Ask Samantha Anything.</h2>
-     <div class="sub">Get instant answers and a personalized walkthrough of Central Park.</div>
-     <div class="spacer"></div>
-     <div class="lbl">Suggested topics</div>
-     <div class="chips">
-       <span class="chip">Open my first ticket</span>
-       <span class="chip alt">Check my coverage</span>
-       <span class="chip">See a live portal walkthrough</span>
-       <span class="chip alt">Get urgent help</span>
-     </div>
-     <div class="askrow">
-       <div class="ask"><span>Ask Samantha anything</span><span class="go">&uarr;</span></div>
-       <div class="lang">EN &nbsp;&#8964;</div>
-     </div>
-     <div class="fine">Park Place Technologies uses the information you provide to contact you about
-       our relevant content, products, and services. Check out our privacy policy <a href="#">here</a>.</div>
+  <div class="card" style="display:block;width:1140px;max-width:100%;height:auto;margin:-22px auto 0;border:1.5px solid #16294a;border-radius:16px;overflow:visible;background:#fff;box-shadow:0 10px 30px rgba(16,41,74,.10);">
+   <div style="width: 100%; height: 85vh; min-height: 900px;">
+     <div id="onemind-widget" style="width:100%; height:100%;"></div>
    </div>
-   <div class="vid" id="onemind-embed">
-     <iframe src="https://app.1mind.com/preview/zldrdxzfwc" title="Samantha - Central Park Onboarding" allow="microphone; camera; autoplay; clipboard-write" style="width:100%;height:100%;border:0;display:block;background:#000;"></iframe>
-   </div>
+   <style>
+     /* Force whatever element the 1mind script injects (iframe/video/div) to fill this box,
+        in case the script sets its own fixed size that ignores the parent container. */
+     #onemind-widget, #onemind-widget > * {
+       width: 100% !important;
+       height: 100% !important;
+       max-width: none !important;
+       max-height: none !important;
+       border: 0 !important;
+     }
+   </style>
   </div>
+  <script src="https://launcher.1mind.com/deployment-zldrdxzfwc" async></script>
   <div class="alt-line">Prefer to watch? See a pre-recorded Central Park walkthrough instead.
      &nbsp;<a href="https://app.1mind.com/preview/zldrdxzfwc">Watch video &gt;&gt;</a></div>
  </div>
