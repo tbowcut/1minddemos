@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Demo</title>
+<!--
+  Internal SE demo asset. Shows the live 1mind widget over a website screenshot.
+  Open locally in a browser with internet access so the launcher script can load.
+-->
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #111313;
+  }
+  .page-shot {
+    display: block;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: top center;
+  }
+</style>
+<script>
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = 'https://launcher.1mind.com/deployment-ddlp4cggsb';
+  document.head.appendChild(s);
+</script>
+</head>
+<body>
+  <img class="page-shot" src="https://i.imgur.com/zAc59ug.png" alt="Website screenshot" />
+
+  <!-- 1mind widget launcher mount point -->
+  <div id="onemind-widget" style="height: 236px; width: 395px; position: fixed; bottom: 24px; right: 24px; z-index: 2147483647; pointer-events: auto;"></div>
+</body>
+</html>
